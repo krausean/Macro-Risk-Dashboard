@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 import requests
 from bs4 import BeautifulSoup
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parent
 CONFIG=json.loads((ROOT/"config.json").read_text(encoding="utf-8"))
 OUT=ROOT/"dashboard.json"
 HEADERS={"User-Agent":"PersonalMacroRiskDashboard/2.0 (non-commercial educational use)"}
