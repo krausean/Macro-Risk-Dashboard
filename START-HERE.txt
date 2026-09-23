@@ -1,0 +1,45 @@
+START HERE
+
+This version has NO folders in the ZIP.
+
+STEP 1
+Create a new empty PUBLIC GitHub repository.
+
+STEP 2
+Extract this ZIP.
+
+STEP 3
+On GitHub:
+Add file -> Upload files
+
+STEP 4
+Upload ALL the files you see in the extracted folder.
+They are ordinary files only. You should NOT be uploading any folders.
+
+STEP 5
+Commit the upload.
+
+STEP 6
+Click Actions -> set up a workflow yourself.
+
+The workflow editor will already be in:
+.github/workflows/
+
+Change the filename to:
+dashboard.yml
+
+STEP 7
+Open WORKFLOW-TO-PASTE.txt in your repository.
+Copy everything in it.
+Paste it into the dashboard.yml editor.
+Commit changes.
+
+STEP 8
+Settings -> Pages -> Source -> GitHub Actions
+
+STEP 9
+Open Actions and watch:
+Refresh and deploy dashboard
+
+When it is green:
+Settings -> Pages -> Visit site

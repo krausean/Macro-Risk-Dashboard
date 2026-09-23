@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Macro Risk Dashboard</title>
+  <meta name="description" content="Personal macroeconomic risk-monitoring dashboard.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">PERSONAL RRSP MONITOR</div>
+      <h1>Macro Risk Dashboard</h1>
+      <p class="sub">A compact view of labour deterioration, lending standards, government yields and inflation pressure.</p>
+    </div>
+    <div class="freshness"><span id="freshnessDot" class="dot neutral"></span><span id="updatedText">Loading…</span></div>
+  </header>
+
+  <div id="warningBox" class="warning hidden"></div>
+
+  <section class="hero-grid">
+    <article class="panel">
+      <div class="label">COMPOSITE MONITOR</div>
+      <div class="riskline"><div id="regime" class="hero-value">—</div><span id="riskBadge" class="badge">—</span></div>
+      <p id="regimeExplanation" class="muted"></p>
+      <div class="meter"><div id="meterFill"></div></div>
+      <div class="meter-labels"><span>Calm</span><span>Watch</span><span>Elevated</span><span>High</span></div>
+    </article>
+    <article class="panel">
+      <div class="label">PERSONAL RULE-SET BAND</div>
+      <div id="cashBand" class="hero-value">—</div>
+      <div id="cashDollars" class="cash-dollar">—</div>
+      <p id="cashExplanation" class="muted"></p>
+      <p class="fine">A user-defined planning rule, not an automatic trade instruction or individualized recommendation.</p>
+    </article>
+  </section>
+
+  <section class="section-head">
+    <div><div class="label">WHAT IS MOVING THE SCORE</div><h2>Current signals</h2></div>
+    <div class="legend"><span><i class="green"></i>calm</span><span><i class="yellow"></i>watch</span><span><i class="orange"></i>elevated</span><span><i class="red"></i>high</span></div>
+  </section>
+  <section id="cards" class="cards"></section>
+
+  <section class="chart-grid">
+    <article class="panel">
+      <div class="chart-head"><div><div class="label">U.S. RATES</div><h3>Treasury yields</h3></div><div class="small-note">2Y, 10Y, 10Y real</div></div>
+      <div id="usRatesChart" class="chart"></div>
+    </article>
+    <article class="panel">
+      <div class="chart-head"><div><div class="label">LABOUR</div><h3>U.S. unemployment rate</h3></div><div class="small-note">BLS monthly</div></div>
+      <div id="unemploymentChart" class="chart"></div>
+    </article>
+  </section>
+
+  <section class="panel decision">
+    <div class="label">CONFIRMATION CHECK</div><h2>Conditions I would want to see together</h2>
+    <div id="checklist" class="checklist"></div>
+  </section>
+
+  <section class="panel">
+    <div class="section-head tight">
+      <div><div class="label">OFFICIAL SOURCES ONLY</div><h2>Relevant releases</h2></div>
+      <div class="small-note">Titles/links only; “why it matters” is rule-based.</div>
+    </div>
+    <div id="news"></div>
+  </section>
+
+  <section class="panel reentry">
+    <div class="label">PRE-COMMITTED RE-ENTRY PLAN</div>
+    <h2>Don't let a defensive plan become a permanent exit</h2>
+    <p class="muted">If you deliberately raise cash during deterioration, decide in advance how it gets redeployed. A simple personal framework is to divide the reserve into four equal tranches and begin redeploying as the composite score falls materially from its peak and labour/lending signals stabilize. The dashboard does not execute trades.</p>
+  </section>
+
+  <section class="panel source-panel">
+    <div class="label">SOURCE HEALTH</div><h2>Did today's refresh work?</h2>
+    <div id="sourceHealth" class="source-health"></div>
+  </section>
+
+  <footer>
+    <p><strong>Data sources:</strong> U.S. Department of the Treasury; U.S. Bureau of Labor Statistics; Board of Governors of the Federal Reserve System; Bank of Canada.</p>
+    <p><strong>BLS notice:</strong> BLS.gov cannot vouch for the data or analyses derived from these data after the data have been retrieved from BLS.gov.</p>
+    <p>Source: Bank of Canada. Data are transformed and presented by this site. The Bank of Canada does not endorse this application.</p>
+    <p>No FRED API, ICE/BofA indices, S&amp;P indices, VIX data, Google News, analytics, advertising, cookies, external JavaScript libraries, or institutional logos are used.</p>
+    <p><a href="legal.html">Data-use notes &amp; disclaimers</a></p>
+  </footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "portfolio_value": 100000,
+  "currency": "CAD",
+  "news_lookback_days": 14,
+  "score_bands": [
+    {
+      "max_score": 2.0,
+      "regime": "CALM / NORMAL",
+      "level": "green",
+      "cash_low": 5,
+      "cash_high": 10
+    },
+    {
+      "max_score": 4.0,
+      "regime": "WATCH",
+      "level": "yellow",
+      "cash_low": 10,
+      "cash_high": 15
+    },
+    {
+      "max_score": 6.0,
+      "regime": "ELEVATED",
+      "level": "orange",
+      "cash_low": 15,
+      "cash_high": 25
+    },
+    {
+      "max_score": 8.0,
+      "regime": "HIGH STRESS",
+      "level": "red",
+      "cash_low": 25,
+      "cash_high": 35
+    },
+    {
+      "max_score": 10.1,
+      "regime": "SEVERE STRESS",
+      "level": "red",
+      "cash_low": 30,
+      "cash_high": 40
+    }
+  ]
+}

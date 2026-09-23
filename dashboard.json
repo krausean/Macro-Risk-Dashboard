@@ -1,0 +1,49 @@
+{
+  "generated_at": null,
+  "generated_at_display": "sample data \u2014 first GitHub refresh not yet run",
+  "portfolio_value": 100000,
+  "overall": {
+    "regime": "SETUP / SAMPLE",
+    "score": 0,
+    "level": "green",
+    "explanation": "The first GitHub Actions run will replace this placeholder with current official-source data."
+  },
+  "rule_set": {
+    "band": "5\u201310% cash equivalents",
+    "low_dollars": 5000,
+    "high_dollars": 10000,
+    "level": "green",
+    "explanation": "Illustrative starting band until the first live refresh completes."
+  },
+  "metrics": [],
+  "series": {
+    "us2y": [],
+    "us10y": [],
+    "us10y_real": [],
+    "unemployment": []
+  },
+  "checklist": [],
+  "news": [],
+  "source_status": [
+    {
+      "name": "U.S. Treasury",
+      "ok": false,
+      "note": "not refreshed yet"
+    },
+    {
+      "name": "U.S. BLS",
+      "ok": false,
+      "note": "not refreshed yet"
+    },
+    {
+      "name": "Federal Reserve SLOOS",
+      "ok": false,
+      "note": "not refreshed yet"
+    },
+    {
+      "name": "Bank of Canada",
+      "ok": false,
+      "note": "not refreshed yet"
+    }
+  ]
+}
