@@ -1,0 +1,32 @@
+MACRO RISK DASHBOARD — V3 UPGRADE
+
+This is an upgrade for your EXISTING flat GitHub repository.
+You do NOT need to delete the repository or change the workflow.
+
+Replace these four files at the repository root:
+- index.html
+- styles.css
+- app.js
+- update_data.py
+
+EASIEST METHOD IN GITHUB
+1. Open the repository and choose Add file -> Upload files.
+2. Drag these four files onto the upload page.
+3. GitHub should show them as changed/replaced files.
+4. Commit directly to main.
+5. The existing "Refresh and deploy dashboard" action should start automatically.
+6. Wait for a green checkmark, then reload the Pages site (Ctrl+F5 if necessary).
+
+WHAT CHANGED
+- Hover or tap/click ? icons for plain-English explanations.
+- Tooltips work on desktop and mobile.
+- A collapsible "How to read this dashboard" guide.
+- A 30-second summary: main concern, reassuring signals, and what to watch next.
+- Each indicator shows exactly how many points it adds to the 0–10 score.
+- Canada cards clearly show "Context only".
+- Thresholds are displayed directly on each card.
+- C&I lending standards renamed and explained: negative = easing.
+- Bank of Canada data switched to the Bank's official CSV-export route instead of the failing Valet request.
+- The existing score thresholds are preserved so we do not keep moving the goalposts after seeing current data.
+
+No API keys or new GitHub settings are required.
